@@ -5,13 +5,11 @@
     tools:context="com.developers.viewpager.Page2">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/page_two_fragment"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:layout_margin="5dp"
-        android:textStyle="bold" />
+        android:src="@drawable/deadpool" />
 
 </FrameLayout>

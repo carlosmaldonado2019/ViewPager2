@@ -14,8 +14,7 @@ import android.view.ViewGroup
 class Page2 : Fragment() {
 
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val v:View= inflater!!.inflate(R.layout.fragment_page2, container, false)
         return v

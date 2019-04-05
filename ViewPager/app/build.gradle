@@ -23,12 +23,14 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "com.android.support:appcompat-v7:$buildToolsVer"
     implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
     testImplementation "junit:junit:$junitVer"
     androidTestImplementation "com.android.support.test:runner:$androidTestRunnerVer"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$espressoCoreVersion"
-    implementation 'com.android.support:support-v4:$supportVer'
+    implementation "com.android.support:support-v4:$supportVer"
+    implementation 'net.objecthunter:exp4j:0.4.8'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
 }
